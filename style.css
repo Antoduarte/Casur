@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;800&display=swap');
 :root {
     --primario: #f46669;
     --secundario: #c7c57d;
@@ -9,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -86,7 +84,7 @@
 /*header*/
 
 header {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.64)), url(img/pexels-adrienne-andersen-2254100.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.64)), url(img/pexels.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -459,6 +457,75 @@ footer {
 .contenedor .contactForm .formBox .inputBox input[type="submit"]:hover {
     background: rgba(75, 214, 124, 0.87);
     transition: 1s ease;
+}
+
+@media (max-width: 1200px) {
+    .contenedor {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: rgba(0, 0, 0, 0.438) 0px 5px 15px;
+    }
+    .contenedor .contactInfo {
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+    }
+    .contenedor .contactForm {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    }
+}
+
+@media (max-width:991px) {
+    .footerBox {
+        background: rgba(255, 255, 255, 0.87);
+    }
+    .footerBox::before {
+        display: none;
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contenedor .contactInfo {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .contenedor .contactForm {
+        width: 100%;
+        height: auto;
+    }
+    .contenedor .contactInfo ul.sci {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+@media (max-width:600px) {
+    .contenedor .contactForm {
+        padding: 25px;
+    }
+    .contenedor .contactInfo {
+        flex-direction: column;
+        padding: 25px;
+        align-items: flex-start;
+    }
+    .contenedor .contactInfo ul.sci {
+        margin-top: 40px;
+    }
+    .contenedor .contactForm .formBox .inputBox.w50 {
+        width: 90%;
+    }
 }
 
 @media (min-width: 992px) {
