@@ -21,8 +21,8 @@ window.onload = function () {
 
 const typed = new Typed('.typed', {
 	strings: [
-		'<i class="mascota">Produciendo Azucar</i>',
-		'<i class="mascota">Generando Energia</i>',
+		'<i class="mascota">Produciendo Azúcar</i>',
+		'<i class="mascota">Generando Energía</i>',
 		
 	],
 
