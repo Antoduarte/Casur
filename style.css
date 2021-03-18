@@ -251,7 +251,7 @@ p {
 /*Certificados*/
 
 .Certificaciones {
-    height: 500px;
+    height: 430px;
 }
 
 .card-group .card {
@@ -277,7 +277,7 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(18, 167, 70, 0.87);
+
 }
 
 .footerBox::before {
